@@ -1,0 +1,93 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    background-image: url("BMW.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+h1{
+    text-align: center;
+    color:rgba(245, 245, 245, 0.687);
+    font-size: 3.5rem;
+}
+
+.msg-box{
+    text-align: center;
+    color:rgba(245, 245, 245, 0.687);
+    font-size: 2rem;
+    margin: 5px 0;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+#container {
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+    backdrop-filter: blur(3px);
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    width: 130px;
+    height: 130px;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    color: #ff4444;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    color: rgba(255, 55, 55, 0.87);
+}
+
+#reset {
+    width: 200px;
+    font-size: 2rem;
+    padding: 5px 30px;
+    color: #ddd;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: linear-gradient(30deg, #ddd, black, rgba(103, 103, 255, 0.575),#00ffff, black,#ddd);
+    animation: glowMove 5s ease infinite;
+    overflow: hidden;
+    background-size: 300% 300%;
+
+}
+
+#reset:hover {
+    box-shadow: 0 0 10px #fff,
+        0 0 20px #fff, 0 0 40px #fff;
+}
+
+@keyframes glowMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
